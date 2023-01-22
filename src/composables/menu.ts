@@ -1,6 +1,7 @@
 // create a menu composable
+const [dropdownMenu, setDropdownMenu] = useToggle(false)
+
 export const useMenu = () => {
-  const [dropdownMenu, setDropdownMenu] = useToggle(false)
   return {
     dropdownMenu,
     setDropdownMenu,
