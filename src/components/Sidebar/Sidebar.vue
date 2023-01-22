@@ -10,7 +10,7 @@
       <SidebarMenuItem />
     </div>
     <div>
-      <img src="/logo.webp" class="w-full">
+      <img src="/logo.jpg" class="w-full">
       <!-- create 3 icons  inline -->
       <div class="flex justify-between">
         <div class="i-carbon-logo-facebook" />
