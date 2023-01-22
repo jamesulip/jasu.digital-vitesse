@@ -17,7 +17,8 @@ jobs:
 
     # Any prerequisite steps
     - uses: actions/checkout@master
-
+    - run: npm ci
+    - run: npm run build --if-present
     # Deploy to local repo
     - name: Deploy
       uses: s0/git-publish-subdir-action@develop
