@@ -1,20 +1,9 @@
 <script setup lang="ts">
-const randomImagesCount = 40
 // chunk this random imagescount
-const chunk = 10
-const randomImages = Array.from({ length: randomImagesCount }, (_, i) => i + 1)
-const randomImagesChunks = randomImages.reduce((resultArray, item, index) => {
-  const chunkIndex = Math.floor(index / chunk)
-  if (!resultArray[chunkIndex])
-    resultArray[chunkIndex] = []
 
-  resultArray[chunkIndex].push(item)
-  return resultArray
-}, [])
-
-function randonHeight() {
-  return Math.floor(Math.random() * 100) + 300
-}
+const images = Array.from({ length: 21 }, (_, i) => `/gallery/img${i}.jpg`)
+// chunk the images into 3 with length depending on the images length
+const randomImagesChunks = images.reduce((acc, _, i, arr) => i % 3 ? acc : [...acc, arr.slice(i, i + 3)], [])
 </script>
 
 <template>
@@ -26,7 +15,7 @@ function randonHeight() {
     <div class="flex gap-3 p-4">
       <div v-for="col in randomImagesChunks" :key="`row-${col}`" class="flex flex-col gap-3 w-full  ">
         <div v-for="row in col" :key="`col-${row}`" class="flex flex-row gap-3">
-          <img :src="`https://picsum.photos/id/${randonHeight()}/300/${randonHeight()}`" class="w-full">
+          <img :src="row" class="w-full">
         </div>
       </div>
     </div>
