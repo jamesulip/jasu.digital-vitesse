@@ -18,16 +18,19 @@ const menu = ref([
     link: '/contact',
   },
 ])
+function tt() {
+  setDropdownMenu(false)
+}
 </script>
 
 <template>
-  <ul class="max-w-xs md:text-left text-center text-[18pt] font-bold">
+  <ul class="max-w-xs md:text-left text-center text-[18pt] font-bold flex flex-col md:gap-5 gap-1">
     <li v-for="menuItem in menu" :key="menuItem.name">
       <RouterLink
         class="block  rounded-md"
         :class="{ 'text-[#25947a]': $route.path === menuItem.link }"
         :to="menuItem.link"
-        @click="setDropdownMenu(false)"
+        @click="tt"
       >
         {{ menuItem.name }}
       </RouterLink>

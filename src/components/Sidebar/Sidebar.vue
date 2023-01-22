@@ -11,7 +11,14 @@ onClickOutside(target, event => setDropdownMenu(false))
       <div
         class="flex justify-between bg-[#25947a] text-white p-4 md:hidden "
       >
-        <button class="i-carbon-menu" @click="setDropdownMenu()" />
+        <!-- animate burger to close icon -->
+        <button
+          :class="{
+            'i-carbon-menu': !dropdownMenu,
+            'i-carbon-close': dropdownMenu,
+          }" @click="setDropdownMenu()"
+        />
+
         <div class="i-carbon-logo-facebook" />
         <div class="i-carbon-logo-instagram" />
         <div class="i-carbon-email" />
