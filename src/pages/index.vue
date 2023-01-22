@@ -1,9 +1,12 @@
 <script setup lang="ts">
-// chunk this random imagescount
-
-const images = Array.from({ length: 21 }, (_, i) => `/gallery/img${i}.jpg`)
-// chunk the images into 3 with length depending on the images length
-const randomImagesChunks = images.reduce((acc, _, i, arr) => i % 3 ? acc : [...acc, arr.slice(i, i + 3)], [])
+const images = Array.from({ length: 41 }, (_, i) => `/gallery/img${i}.jpg`)
+const randomImagesChunks = images.reduce((acc, _, i) => {
+  const chunkIndex = Math.floor(i / Math.ceil(images.length / 3))
+  if (!acc[chunkIndex])
+    acc[chunkIndex] = []
+  acc[chunkIndex].push(images[i])
+  return acc
+}, [])
 </script>
 
 <template>
