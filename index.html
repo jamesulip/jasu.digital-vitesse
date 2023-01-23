@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,21 +21,21 @@
     })()
   </script>
 </head>
+
 <body class="font-sans">
   <div id="app"></div>
-  <script type="module" src="/src/main.ts"></script>
-
-  <!-- Messenger Chat Plugin Code -->
   <div id="fb-root"></div>
-
-  <!-- Your Chat Plugin code -->
   <div id="fb-customer-chat" class="fb-customerchat">
   </div>
+  <script type="module" src="/src/main.ts"></script>
 
+
+  <!-- Messenger Chat Plugin Code -->
+ 
   <script>
     const chatbox = document.getElementById('fb-customer-chat')
-chatbox.setAttribute('page_id', '919856601434070')
-chatbox.setAttribute('attribution', 'biz_inbox')
+    chatbox.setAttribute('page_id', '919856601434070')
+    chatbox.setAttribute('attribution', 'biz_inbox')
   </script>
 
   <!-- Your SDK code -->
@@ -43,17 +44,18 @@ chatbox.setAttribute('attribution', 'biz_inbox')
       FB.init({
         xfbml: true,
         version: 'v15.0',
-  })
-};
+      })
+    };
 
     (function (d, s, id) {
       let js; const fjs = d.getElementsByTagName(s)[0]
-  if (d.getElementById(id))
-    return
-  js = d.createElement(s); js.id = id
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
-  fjs.parentNode.insertBefore(js, fjs)
-}(document, 'script', 'facebook-jssdk'))
+      if (d.getElementById(id))
+        return
+      js = d.createElement(s); js.id = id
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'
+      fjs.parentNode.insertBefore(js, fjs)
+    }(document, 'script', 'facebook-jssdk'))
   </script>
 </body>
+
 </html>
