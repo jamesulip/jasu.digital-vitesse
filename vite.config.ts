@@ -157,9 +157,14 @@ export default defineConfig({
 
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
+
     script: 'async',
     formatting: 'minify',
-    onFinished() { generateSitemap() },
+    onFinished() {
+      generateSitemap({
+        hostname: 'https://jasu.digital',
+      })
+    },
   },
 
   ssr: {
