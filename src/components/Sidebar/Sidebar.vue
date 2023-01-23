@@ -19,9 +19,9 @@ onClickOutside(target, event => setDropdownMenu(false))
           }" @click="setDropdownMenu()"
         />
 
-        <div class="i-carbon-logo-facebook" />
-        <div class="i-carbon-logo-instagram" />
-        <div class="i-carbon-email" />
+        <a target="_blank" href="https://www.facebook.com/jasulip" class="i-carbon-logo-facebook" />
+        <a target="_blank" href="https://www.instagram.com/jasu.digital" class="i-carbon-logo-instagram" />
+        <RouterLink to="/contact" class="i-carbon-email" />
       </div>
       <div v-if="dropdownMenu" class="bg-white w-full mx-auto md:mx-0 p-8  shadow-lg flex-col justify-between flex md:hidden">
         <div class="logo flex flex-col text-center text-[#25947a]">
@@ -37,9 +37,9 @@ onClickOutside(target, event => setDropdownMenu(false))
           <img src="/logo.jpg" class="w-1/4 mx-auto">
           <!-- create 3 icons  inline -->
           <div class="flex justify-between md:visible invisible">
-            <div class="i-carbon-logo-facebook" />
-            <div class="i-carbon-logo-instagram" />
-            <div class="i-carbon-email" />
+            <a target="_blank" href="https://www.facebook.com/jasulip" class="i-carbon-logo-facebook" />
+            <a target="_blank" href="https://www.instagram.com/jasu.digital" class="i-carbon-logo-instagram" />
+            <a class="i-carbon-email" />
           </div>
         </div>
       </div>
@@ -59,8 +59,8 @@ onClickOutside(target, event => setDropdownMenu(false))
           <img src="/logo.jpg" class="w-full">
           <!-- create 3 icons  inline -->
           <div class="flex justify-between ">
-            <div class="i-carbon-logo-facebook" />
-            <div class="i-carbon-logo-instagram" />
+            <a target="_blank" href="https://www.facebook.com/jasulip" class="i-carbon-logo-facebook" />
+            <a target="_blank" href="https://www.instagram.com/jasu.digital" class="i-carbon-logo-instagram" />
             <div class="i-carbon-email" />
           </div>
         </div>
