@@ -18,15 +18,15 @@ const form = ref({
       <div class="flex flex-col gap-3 p-4 max-w-md mx-auto">
         <div class="flex flex-col gap-3">
           <label for="name" class="text-[#25947a] font-bold">Name</label>
-          <input id="name" v-model="form.name" type="text" class="border-[#25947a] border-1 p-2">
+          <input id="name" v-model="form.name" name="name" type="text" class="border-[#25947a] border-1 p-2">
         </div>
         <div class="flex flex-col gap-3">
           <label for="email" class="text-[#25947a] font-bold">Email</label>
-          <input id="email" v-model="form.email" type="email" class="border-[#25947a] border-1 p-2">
+          <input id="email" v-model="form.email" name="email" type="email" class="border-[#25947a] border-1 p-2">
         </div>
         <div class="flex flex-col gap-3">
           <label for="message" class="text-[#25947a] font-bold">Message</label>
-          <textarea id="message" v-model="form.message" class="border-[#25947a] border-1 p-2" />
+          <textarea id="message" v-model="form.message" name="message" class="border-[#25947a] border-1 p-2" />
         </div>
 
         <div class="flex flex-col gap-3">
