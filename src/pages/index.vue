@@ -43,8 +43,8 @@ const randomImagesChunks = computed(() => {
     </div>
     <div class="flex gap-3 p-4">
       <div v-for="col in randomImagesChunks" :key="`row-${col}`" class="flex flex-col gap-3 w-full  ">
-        <div v-for="row in col" :key="`col-${row}`" class="flex flex-row gap-3">
-          <img :src="row" class="w-full">
+        <div v-for="(row, ind) in col" :key="`col-${row}`" class="flex flex-row gap-3">
+          <img :alt="`img-${ind}`" :src="row" class="w-full">
         </div>
       </div>
     </div>
