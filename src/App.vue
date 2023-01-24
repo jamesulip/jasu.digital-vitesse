@@ -39,7 +39,7 @@ useHead({
     },
     {
       property: 'og:image',
-      content: 'https://scontent.fmnl13-1.fna.fbcdn.net/v/t1.18169-9/481520_503008339737925_910996344_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGtykjXzfGq3URgf0ykUNu8xVfS7klDqIrFV9LuSUOoip2m4EDD9QSLHJJzj6MzkTJ9Dq7c1CROUEugrTsCBNWO&_nc_ohc=afOIZPwJ5ScAX_wgs_I&_nc_oc=AQmezL7MpbYfYXXZfkLRMEtSjzsYLi-AkxGnpGvPD6Yt5m2eqa-9MYU7GLtpc7dDxU5yfnaVUzydY77a6YmgJLsa&_nc_ht=scontent.fmnl13-1.fna&oh=00_AfCXf9frHZMhMDWIVjLPRkqkO9JkF8dc8ee3CaOms1yb8Q&oe=63F47F2C',
+      content: 'https://jasu.digital/photo.jpg',
     },
     {
       property: 'twitter:card',
@@ -59,7 +59,7 @@ useHead({
     },
     {
       property: 'twitter:image',
-      content: 'https://scontent.fmnl13-1.fna.fbcdn.net/v/t1.18169-9/481520_503008339737925_910996344_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGtykjXzfGq3URgf0ykUNu8xVfS7klDqIrFV9LuSUOoip2m4EDD9QSLHJJzj6MzkTJ9Dq7c1CROUEugrTsCBNWO&_nc_ohc=afOIZPwJ5ScAX_wgs_I&_nc_oc=AQmezL7MpbYfYXXZfkLRMEtSjzsYLi-AkxGnpGvPD6Yt5m2eqa-9MYU7GLtpc7dDxU5yfnaVUzydY77a6YmgJLsa&_nc_ht=scontent.fmnl13-1.fna&oh=00_AfCXf9frHZMhMDWIVjLPRkqkO9JkF8dc8ee3CaOms1yb8Q&oe=63F47F2C',
+      content: 'https://jasu.digital/photo.jpg',
     },
 
   ],
