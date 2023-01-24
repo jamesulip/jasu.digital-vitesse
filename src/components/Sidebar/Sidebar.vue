@@ -13,15 +13,24 @@ onClickOutside(target, event => setDropdownMenu(false))
       >
         <!-- animate burger to close icon -->
         <button
+          role="button"
           :class="{
             'i-carbon-menu': !dropdownMenu,
             'i-carbon-close': dropdownMenu,
           }" @click="setDropdownMenu()"
-        />
+        >
+          <label class="sr-only">Menu</label>
+        </button>
 
-        <a target="_blank" href="https://www.facebook.com/jasulip" class="i-carbon-logo-facebook" />
-        <a target="_blank" href="https://www.instagram.com/jasu.digital" class="i-carbon-logo-instagram" />
-        <RouterLink to="/contact" class="i-carbon-email" />
+        <a target="_blank" href="https://www.facebook.com/jasulip" class="i-carbon-logo-facebook">
+          <label class="sr-only">Facebook</label>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/jasu.digital" class="i-carbon-logo-instagram">
+          <label class="sr-only">Instagram</label>
+        </a>
+        <RouterLink to="/contact" class="i-carbon-email">
+          <label class="sr-only">Email</label>
+        </RouterLink>
       </div>
       <div v-if="dropdownMenu" class="bg-white w-full mx-auto md:mx-0 p-8  shadow-lg flex-col justify-between flex md:hidden">
         <div class="logo flex flex-col text-center text-[#25947a]">

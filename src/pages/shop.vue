@@ -1,17 +1,15 @@
-<script>
-export default {
-  setup() {
-    return {}
-  },
-}
+<script setup lang="ts">
+onMounted(() => {
+  const script = document.createElement('script')
+  script.src = 'https://etsy360.io/widgets/js/etsy360.js'
+  script.setAttribute('data-token', 'gAV6MuWZO6KMKZLkE30FtsH8AArpLDkL9snaaVvEiXaqi6huUawRoxmoVo345Adp')
+  // ppend to body
+  document.head.appendChild(script)
+})
 </script>
 
 <template>
-  <div>
-    asdasd
+  <div id="listings">
+    asd
   </div>
 </template>
-
-<style lang="scss" scoped>
-
-</style>
