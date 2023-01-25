@@ -14,9 +14,13 @@ const form = ref({
     </div>
 
     <!-- create form for name email and message -->
-    <form name="Contact Us Page" method="post" netlify>
+    <form netlify-honeypot="bot-field" name="Contact Us Page" method="post" netlify>
       <input type="hidden" name="form-name" value="Contact Us Page">
-
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you’re human: <input name="bot-field">
+        </label>
+      </p>
       <div class="flex flex-col gap-3 p-4 max-w-md mx-auto">
         <div class="flex flex-col gap-3">
           <label for="name" class="text-[#25947a] font-bold">Name</label>
