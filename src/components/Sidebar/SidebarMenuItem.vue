@@ -11,8 +11,7 @@ const menu = ref([
   },
   {
     name: 'SHOP',
-    link: '/shop',
-    // link: 'https://www.etsy.com/shop/jasudigitalarts',
+    link: 'https://www.etsy.com/shop/jasudigitalarts',
   },
   {
     name: 'CONTACT',
