@@ -6,6 +6,7 @@ onMounted(() => {
   // ppend to body
   document.head.appendChild(script)
 })
+// created hook
 </script>
 
 <template>
