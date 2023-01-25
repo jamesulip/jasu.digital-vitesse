@@ -14,7 +14,7 @@ const form = ref({
     </div>
 
     <!-- create form for name email and message -->
-    <form name="Contact Us Page" netlify data-netlify-recaptcha="true">
+    <form name="Contact Us Page" netlify>
       <div class="flex flex-col gap-3 p-4 max-w-md mx-auto">
         <div class="flex flex-col gap-3">
           <label for="name" class="text-[#25947a] font-bold">Name</label>
@@ -28,7 +28,6 @@ const form = ref({
           <label for="message" class="text-[#25947a] font-bold">Message</label>
           <textarea id="message" v-model="form.message" name="message" class="border-[#25947a] border-1 p-2" />
         </div>
-        <div data-netlify-recaptcha="true" />
         <div class="flex flex-col gap-3">
           <button role="button" class="bg-[#25947a] text-white p-2 disabled:bg-[#25947a] disabled:opacity-65 disabled:cursor-no-drop">
             Send
