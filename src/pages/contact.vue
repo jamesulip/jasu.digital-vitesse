@@ -14,7 +14,7 @@ const form = ref({
     </div>
 
     <!-- create form for name email and message -->
-    <form name="Contact Us Page" netlify>
+    <form name="Contact Us Page" method="post" netlify>
       <div class="flex flex-col gap-3 p-4 max-w-md mx-auto">
         <div class="flex flex-col gap-3">
           <label for="name" class="text-[#25947a] font-bold">Name</label>
@@ -29,7 +29,7 @@ const form = ref({
           <textarea id="message" v-model="form.message" name="message" class="border-[#25947a] border-1 p-2" />
         </div>
         <div class="flex flex-col gap-3">
-          <button role="button" class="bg-[#25947a] text-white p-2 disabled:bg-[#25947a] disabled:opacity-65 disabled:cursor-no-drop">
+          <button type="submit" role="button" class="bg-[#25947a] text-white p-2 disabled:bg-[#25947a] disabled:opacity-65 disabled:cursor-no-drop">
             Send
           </button>
         </div>
