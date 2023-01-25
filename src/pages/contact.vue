@@ -15,6 +15,8 @@ const form = ref({
 
     <!-- create form for name email and message -->
     <form name="Contact Us Page" method="post" netlify>
+      <input type="hidden" name="form-name" value="Contact Us Page">
+
       <div class="flex flex-col gap-3 p-4 max-w-md mx-auto">
         <div class="flex flex-col gap-3">
           <label for="name" class="text-[#25947a] font-bold">Name</label>
