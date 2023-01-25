@@ -14,7 +14,7 @@ const form = ref({
     </div>
 
     <!-- create form for name email and message -->
-    <form name="Contact Us Page" data-netlify="true" data-netlify-recaptcha="true">
+    <form name="Contact Us Page" netlify data-netlify-recaptcha="true">
       <div class="flex flex-col gap-3 p-4 max-w-md mx-auto">
         <div class="flex flex-col gap-3">
           <label for="name" class="text-[#25947a] font-bold">Name</label>
