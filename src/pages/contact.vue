@@ -10,7 +10,7 @@ const form = ref({
   <section class="overflow-hidden text-gray-700 h-screen">
     <hr class="border-[#25947a] mt-10 border-3">
     <div class="w-full text-center p-4">
-      <span class="text-[#25947a] text-3xl font-bold">About</span>
+      <span class="text-[#25947a] text-3xl font-bold">Contact Me</span>
     </div>
 
     <!-- create form for name email and message -->
