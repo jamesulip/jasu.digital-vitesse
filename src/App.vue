@@ -3,11 +3,11 @@
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
-  title: 'jasu.digital',
+  title: 'Jasu Digital',
   meta: [
     {
       name: 'title',
-      content: 'jasu.digital',
+      content: 'Jasu Digital',
     },
     {
       name: 'description',
@@ -31,7 +31,7 @@ useHead({
     },
     {
       property: 'og:title',
-      content: 'jasu.digital',
+      content: 'Jasu Digital',
     },
     {
       property: 'og:description',
@@ -51,7 +51,7 @@ useHead({
     },
     {
       property: 'twitter:title',
-      content: 'jasu.digital',
+      content: 'Jasu Digital',
     },
     {
       property: 'twitter:description',

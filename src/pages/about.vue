@@ -1,5 +1,19 @@
 <script setup lang="ts">
-
+// usehead
+useHead({
+  title: 'About',
+  // create meta tags for about
+  meta: [
+    {
+      name: 'title',
+      content: 'About',
+    },
+    {
+      name: 'description',
+      content: 'Unleash your creativity and bring your vision to life with the help of Julie Ann Santos Ulip, a highly skilled and accomplished freelance artist. With a strong background in Fine Arts and Advertising Design, she can help you create stunning digital illustrations, portraits, and more. Whether you\'re looking for a new tattoo design, a custom sculpture, or an animated project, Julie has the talent and experience to bring your ideas to reality. Get in touch today and let\'s make something amazing together!',
+    },
+  ],
+})
 </script>
 
 <template>
